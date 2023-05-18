@@ -8,7 +8,7 @@ spec:
   dependsOn:
     - name: tanzu-namespaces
   interval: 1m0s
-  path: /application1/app
+  path: ./app
   prune: true
   sourceRef:
     kind: GitRepository
