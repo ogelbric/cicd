@@ -6,7 +6,7 @@ metadata:
   namespace: tanzu-continuousdelivery-resources
 spec:
   interval: 1m0s
-  path: /application1/auth
+  path: ./auth
   prune: true
   sourceRef:
     kind: GitRepository
