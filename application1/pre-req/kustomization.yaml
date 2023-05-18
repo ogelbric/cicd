@@ -3,3 +3,4 @@ kind: Kustomization
 resources:
 - tanzu-auth.yaml
 - tanzu-namespaces.yaml
+- tanzu-app.yaml
