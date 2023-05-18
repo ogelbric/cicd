@@ -5,6 +5,8 @@ metadata:
   name: tanzu-packages-namespaces
   namespace: tanzu-continuousdelivery-resources
 spec:
+  dependsOn:
+    - name: tanzu-auth
   interval: 1m0s
   path: ./namespace
   prune: true
