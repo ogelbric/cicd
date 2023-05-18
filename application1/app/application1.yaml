@@ -19,7 +19,6 @@ spec:
   selector:
     app: nginx
   type: LoadBalancer
-
 ---
 apiVersion: apps/v1
 kind: Deployment
