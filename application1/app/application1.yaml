@@ -1,4 +1,13 @@
 apiVersion: v1
+kind: ServiceAccount
+metadata:
+  annotations:
+    tkg.tanzu.vmware.com/tanzu-package: app-packages
+    kapp.k14s.io/update-strategy: "fallback-on-replace"
+  name: app
+  namespace: orfns
+---
+apiVersion: v1
 kind: Service
 metadata:
   labels:
