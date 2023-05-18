@@ -12,5 +12,5 @@ spec:
   prune: true
   sourceRef:
     kind: GitRepository
-    name: orfcicd                                  # Must match the name of the GitRepo you added in TMC
+    name: cicd                                  # Must match the name of the GitRepo you added in TMC
     namespace: tanzu-continuousdelivery-resources
