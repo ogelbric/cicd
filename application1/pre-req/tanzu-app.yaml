@@ -6,7 +6,7 @@ metadata:
   namespace: tanzu-continuousdelivery-resources
 spec:
   dependsOn:
-    - name: tanzu-namespaces
+    - name: tanzu-namespace
   interval: 1m0s
   path: /application1/app
   prune: true
