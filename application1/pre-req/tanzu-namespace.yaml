@@ -1,0 +1,16 @@
+---
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
+kind: Kustomization
+metadata:
+  name: tanzu-namespace
+  namespace: tanzu-continuousdelivery-resources
+spec:
+  dependsOn:
+    - name: tanzu-auth
+  interval: 1m0s
+  path: /application1/namespace
+  prune: true
+  sourceRef:
+    kind: GitRepository
+    name: orfcicd                                  # Must match the name of the GitRepo you added in TMC
+    namespace: tanzu-continuousdelivery-resources
