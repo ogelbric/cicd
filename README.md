@@ -36,3 +36,8 @@ nginx-54f4568dfc-kxr2g   1/1     Running   0          18m
 nginx-54f4568dfc-lgclv   1/1     Running   0          18m
 nginx-54f4568dfc-lhfw4   1/1     Running   0          18m
 
+
+TSM yaml's
+
+weather -> sun -> rain -> yes
+
