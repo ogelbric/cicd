@@ -1,5 +1,10 @@
 TMC integration
 
+1) Clusters -> {cluster name} -> Add-ons -> Git Repositories -> Add Git Repository -> Name, URL = https://github.com/ogelbric/cicd.git, Path = /application1/re-req, Brach = Main
+
+2) Continuous Delivery -> Kustomizations -> application1 -> Path = /application1/pre-req, Prune = On
+
+
 
 To check on deployment in cluster: 
 
