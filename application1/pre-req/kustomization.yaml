@@ -5,3 +5,4 @@ resources:
 - tanzu-namespace.yaml
 - tanzu-app.yaml
 - tanzu-tsm-namespace.yaml
+- tanzu-tsm-appberlin.yaml
