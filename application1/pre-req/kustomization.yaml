@@ -4,3 +4,4 @@ resources:
 - tanzu-auth.yaml
 - tanzu-namespace.yaml
 - tanzu-app.yaml
+- tanzu-tsm-namespace.yaml
