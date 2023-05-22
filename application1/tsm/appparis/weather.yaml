@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: weather
+  namespace: orftsmparis
 spec:
   replicas: 1
   selector:
@@ -29,6 +30,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: weather
+  namespace: orftsmparis
   labels:
     app: weather
 spec:
