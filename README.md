@@ -61,3 +61,12 @@ orftsmberlin   rainsnow   ["acme-gateway"]   ["*"]   6m28s
 
 orftsmparis    rainsnow   ["acme-gateway"]   ["*"]   6m27s
 
+kubectl get gw -A
+
+NAMESPACE      NAME           AGE
+
+orftsmberlin   acme-gateway   9m14s
+
+orftsmparis    acme-gateway   9m13s
+
+
