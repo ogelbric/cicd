@@ -1,8 +1,10 @@
 TMC integration
 
-1) Clusters -> {cluster name} -> Add-ons -> Git Repositories -> Add Git Repository -> Name, URL = https://github.com/ogelbric/cicd.git, Path = /application1/re-req, Brach = Main
+1) Enable Cluster (button => FluxCD will be installed on cluster) 
 
-2) Continuous Delivery -> Kustomizations -> application1 -> Path = /application1/pre-req, Prune = On
+2) Clusters -> {cluster name} -> Add-ons -> Git Repositories -> Add Git Repository -> Name= orfcicd, URL = https://github.com/ogelbric/cicd.git,  Brach = main
+
+3) Continuous Delivery -> Kustomizations -> application1 -> Path = /application1/pre-req, Prune = On
 
 
 
