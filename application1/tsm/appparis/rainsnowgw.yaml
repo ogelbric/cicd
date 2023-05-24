@@ -2,6 +2,7 @@ apiVersion: networking.istio.io/v1alpha3
 kind: Gateway
 metadata:
   name: acme-gateway
+  namespace: orftsmparis
 spec:
   selector:
     istio: ingressgateway # use istio default controller
