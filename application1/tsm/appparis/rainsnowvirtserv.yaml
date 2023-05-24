@@ -10,7 +10,7 @@ spec:
   http:
   - match:
     - uri:
-        prefix: /weather
+        prefix: /weatherparis
     route:
     - destination:
         host: weather
