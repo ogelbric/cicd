@@ -69,4 +69,9 @@ orftsmberlin   acme-gateway   9m14s
 
 orftsmparis    acme-gateway   9m13s
 
+Test:
+
+curl `kubectl get svc -A | grep ingressgateway | awk '{ print $5 }' | head -1`/weatherparis
+
+curl `kubectl get svc -A | grep ingressgateway | awk '{ print $5 }' | head -1`/weatherberlin
 
