@@ -34,6 +34,7 @@ nginx   4/4     4            4           18m
 [root@localhost ~]# k get pods -n orfns
 
 NAME                     READY   STATUS    RESTARTS   AGE
+
 nginx-54f4568dfc-f5vcf   1/1     Running   0          18m
 nginx-54f4568dfc-kxr2g   1/1     Running   0          18m
 nginx-54f4568dfc-lgclv   1/1     Running   0          18m
@@ -47,6 +48,7 @@ weather -> sun -> rain -> yes
 kubectl get virtualservices -A
 
 NAMESPACE      NAME       GATEWAYS           HOSTS   AGE
+
 orftsmberlin   rainsnow   ["acme-gateway"]   ["*"]   6m28s
 orftsmparis    rainsnow   ["acme-gateway"]   ["*"]   6m27s
 
