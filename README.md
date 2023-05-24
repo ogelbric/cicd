@@ -75,3 +75,7 @@ curl `kubectl get svc -A | grep ingressgateway | awk '{ print $5 }' | head -1`/w
 
 curl `kubectl get svc -A | grep ingressgateway | awk '{ print $5 }' | head -1`/weatherberlin
 
+watch -d 'curl 192.168.2.106/weatherberlin; curl 192.168.2.106/weatherparis'
+
+watch -d 'curl 192.168.5.63/weatherberlin; curl 192.168.5.63/weatherparis'
+
