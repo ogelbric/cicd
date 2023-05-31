@@ -19,7 +19,7 @@ spec:
         image: gcr.io/boreal-rain-256712/http-echo:latest
         env:
         - name: TEXT
-          value: Rain2
+          value: Rain2r
         - name: NEXT
           value: "yes-1.demo.acme.com:8080"
         ports:
