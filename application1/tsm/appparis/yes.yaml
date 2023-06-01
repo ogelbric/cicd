@@ -19,7 +19,7 @@ spec:
         image: gcr.io/boreal-rain-256712/http-echo:latest
         env:
         - name: TEXT
-          value: ' Paris maybe '
+          value: ' Paris maybe x '
         ports:
         - name: http
           containerPort: 8080
