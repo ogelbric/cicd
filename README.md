@@ -45,8 +45,31 @@ nginx-54f4568dfc-lhfw4   1/1     Running   0          18m
 
 # TSM yaml's
 
+```
 POD flow: weather -> sun -> rain -> yes
+```
+# TMC integration
 
+```
+On Cluster 1
+4) Continuous Delivery -> Kustomizations -> application1 -> Path = /application1/tsm/clusters/cluster1, Prune = On
+On Cluster 2
+5) Continuous Delivery -> Kustomizations -> application1 -> Path = /application1/tsm/clusters/cluster2, Prune = On
+
+```
+
+* Scaling replicas in Gitup appberlin (sun) and appparis (rain) results see pictures below 
+
+![GitHub](TSM1.png)
+
+
+![GitHub](TSM2.png)
+
+
+![GitHub](TSM3.png)
+
+
+# Trouble Shooting Commands
 ```
 kubectl get virtualservices -A
 ```
@@ -64,7 +87,7 @@ orftsmberlin   acme-gateway   9m14s
 orftsmparis    acme-gateway   9m13s
 ```
 
-# Test:
+# Test (TSM needs traffic to show the graph):
 
 ```
 curl `kubectl get svc -A | grep ingressgateway | awk '{ print $5 }' | head -1`/weatherparis
