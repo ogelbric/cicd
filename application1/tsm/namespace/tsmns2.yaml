@@ -4,4 +4,3 @@ metadata:
   name: orftsmparis
   labels:
     istio-injection: enabled
-
