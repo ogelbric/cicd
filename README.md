@@ -52,9 +52,9 @@ POD flow: weather -> sun -> rain -> yes
 
 ```
 On Cluster 1
-4) Continuous Delivery -> Kustomizations -> application1 -> Path = /application1/tsm/clusters/cluster1, Prune = On
+4) Continuous Delivery -> Kustomizations -> cluster1 -> Path = /application1/tsm/clusters/cluster1, Prune = On
 On Cluster 2
-5) Continuous Delivery -> Kustomizations -> application1 -> Path = /application1/tsm/clusters/cluster2, Prune = On
+5) Continuous Delivery -> Kustomizations -> cluster2 -> Path = /application1/tsm/clusters/cluster2, Prune = On
 
 ```
 
