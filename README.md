@@ -55,8 +55,11 @@ On Cluster 1
 4) Continuous Delivery -> Kustomizations -> cluster1 -> Path = /application1/tsm/clusters/cluster1, Prune = On
 On Cluster 2
 5) Continuous Delivery -> Kustomizations -> cluster2 -> Path = /application1/tsm/clusters/cluster2, Prune = On
-
 ```
+
+![GitHub](cluster1.png)
+
+![GitHub](cluster2.png)
 
 * Scaling replicas in Gitup appberlin (sun) and appparis (rain) results see pictures below 
 
