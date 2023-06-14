@@ -4,7 +4,7 @@ metadata:
   name: sun
   namespace: orftsmparis
 spec:
-  replicas: 1
+  replicas: 0
   selector:
     matchLabels:
       app: sun
