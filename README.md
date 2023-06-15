@@ -10,7 +10,7 @@
 
 # To check on deployment in cluster: 
 ```
-kubeclt get kustomizations -A
+kubectl get kustomizations -A
 ```
 ```
 NAMESPACE                            NAME              AGE   READY   STATUS
