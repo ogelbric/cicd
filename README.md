@@ -1,6 +1,7 @@
 # TMC integration
 
 ```
+0) Create cluster 1/3 best-effort-med/best-effort large (2 CPU/8 GB RAM)/(4 CPU/16 GB RAM)
 1) Enable Cluster (button => FluxCD will be installed on cluster) 
 2) Clusters -> {cluster name} -> Add-ons -> Git Repositories -> Add Git Repository -> Name= orfcicd, URL = https://github.com/ogelbric/cicd.git,  Brach = main
 3) Continuous Delivery -> Kustomizations -> application1 -> Path = /application1/pre-req, Prune = On
