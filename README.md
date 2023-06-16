@@ -11,6 +11,7 @@
 # To check on deployment in cluster: 
 ```
 kubectl get kustomizations -A
+kubectl get kustomizations.kustomize.toolkit.fluxcd.io -A
 ```
 ```
 NAMESPACE                            NAME              AGE   READY   STATUS
