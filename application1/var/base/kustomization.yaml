@@ -27,6 +27,9 @@ vars:
 - name: HOST_C
   objref: { kind: ConfigMap, name: ops-ingress-properties, apiVersion: v1 }
   fieldref: { fieldpath: data.HOST_C }
+- name: HOST_D
+  objref: { kind: ConfigMap, name: ops-ingress-properties, apiVersion: v1 }
+  fieldref: { fieldpath: data.HOST_D }
 env:
   - name: LABEL_NAME
     valueFrom:
