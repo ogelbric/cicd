@@ -4,7 +4,7 @@ bases:
 
 metadata:
   name: base-kustomization
-  namespace: orfns
+  namespace: tanzu-continuousdelivery-resources
   
 configMapGenerator:
 - name: ops-ingress-properties
