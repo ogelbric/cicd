@@ -9,6 +9,7 @@ namespace: tanzu-continuousdelivery-resources
 configMapGenerator:
 - name: ops-ingress-properties
   envs: [environment.properties]
+  behavior: create
 
 vars:
 - name: SERVICES_GLOBAL_STATIC_IP_NAME
