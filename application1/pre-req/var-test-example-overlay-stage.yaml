@@ -6,7 +6,7 @@ metadata:
   namespace: tanzu-continuousdelivery-resources
 spec:
   dependsOn:
-    - name: tanzu-namespace
+    - name: tanzu-var-test-example-base
   interval: 1m0s
   path: /application1/var/overlay/staging
   prune: true
