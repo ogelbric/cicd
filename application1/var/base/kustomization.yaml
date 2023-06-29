@@ -2,6 +2,9 @@
 bases:
 - ingress.yaml
 
+metadata:
+  namespace: orfns
+  
 configMapGenerator:
 - name: ops-ingress-properties
   envs: [environment.properties]
