@@ -3,6 +3,7 @@ bases:
 - ingress.yaml
 
 metadata:
+  name: base-kustomization
   namespace: orfns
   
 configMapGenerator:
