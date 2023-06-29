@@ -3,12 +3,12 @@ apiVersion: networking.k8s.io/v1beta1
 kind: Ingress
 metadata:
   name: services-hello
+  namespace: orfns
   annotations:
     kubernetes.io/ingress.global-static-ip-name: $(SERVICES_GLOBAL_STATIC_IP_NAME)
 #    kubernetes.io/ingress.allow-http: "false"
 #    ingress.gcp.kubernetes.io/pre-shared-cert: $(SERVICES_PRE_SHARED_CERT)
 #    kubernetes.io/ingress.class: "gce"
-  namespace: orfns
 spec:
   rules:
   - host: $(HOST_A)
