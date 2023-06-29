@@ -1,6 +1,6 @@
 # file: base/kustomization.yaml
 bases:
-- ingress.yaml
+- app-with-vars.yaml
 
 metadata:
   name: base-kustomization
