@@ -1,0 +1,5 @@
+# file: overlay/staging/kustomization.yaml
+configMapGenerator:
+- name: ops-ingress-properties
+  envs: [environment.properties]
+  behavior: replace # <======= critical
