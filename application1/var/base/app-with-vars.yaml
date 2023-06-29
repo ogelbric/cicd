@@ -21,6 +21,9 @@ metadata:
   annotations:
     namea: $(SERVICES_GLOBAL_STATIC_IP_NAME)
     nameb: $(SERVICES_PRE_SHARED_CERT)
+    hosta: $(HOST_A)
+    hostb: $(HOST_B)
+    hostc: $(HOST_C)
 
 spec:
   selector:
