@@ -24,6 +24,7 @@ metadata:
     hosta: $(HOST_A)
     hostb: $(HOST_B)
     hostc: $(HOST_C)
+    hostc: $(HOST_D)
 
 spec:
   selector:
