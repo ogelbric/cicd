@@ -27,3 +27,16 @@ vars:
 - name: HOST_C
   objref: { kind: ConfigMap, name: ops-ingress-properties, apiVersion: v1 }
   fieldref: { fieldpath: data.HOST_C }
+env:
+  - name: LABEL_NAME
+    valueFrom:
+      fieldRef:
+        fieldPath: metadata.labels['zone']
+  - name: POD_NAME
+    valueFrom:
+      fieldRef:
+        fieldPath: metadata.name
+  - name: POD_IP
+    valueFrom:
+      fieldRef:
+        fieldPath: status.podIP
