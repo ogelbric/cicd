@@ -1,7 +1,7 @@
 # file: overlay/staging/kustomization.yaml
 metadata:
   name: overlay-stage-kustomization
-  namespace: orfns
+  namespace: tanzu-continuousdelivery-resources
   
 configMapGenerator:
 - name: ops-ingress-properties
