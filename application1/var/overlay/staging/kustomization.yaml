@@ -1,4 +1,7 @@
 # file: overlay/staging/kustomization.yaml
+metadata:
+  namespace: orfns
+  
 configMapGenerator:
 - name: ops-ingress-properties
   envs: [environment.properties]
