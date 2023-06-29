@@ -3,7 +3,7 @@ apiVersion: networking.k8s.io/v1beta1
 kind: Ingress
 metadata:
   name: services-hello
-  namespace: orfns
+  namespace: tanzu-continuousdelivery-resources
   annotations:
     kubernetes.io/ingress.global-static-ip-name: $(SERVICES_GLOBAL_STATIC_IP_NAME)
 #    kubernetes.io/ingress.allow-http: "false"
