@@ -8,3 +8,7 @@ resources:
 # - tanzu-tsm-appberlin.yaml # moved to TSM cluster1
 # - tanzu-tsm-appparis.yaml  # moved to TSM cluster2
 #
+# Variable Test
+#
+- var-test-example-base.yaml
+- var-test-example-overlay-stage.yaml
