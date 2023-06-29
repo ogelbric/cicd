@@ -1,5 +1,6 @@
 # file: overlay/staging/kustomization.yaml
 metadata:
+  name: overlay-stage-kustomization
   namespace: orfns
   
 configMapGenerator:
