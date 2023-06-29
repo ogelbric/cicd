@@ -18,6 +18,10 @@ kind: Deployment
 metadata:
   name: nginx
   namespace: orfns
+  annotations:
+    namea: $(SERVICES_GLOBAL_STATIC_IP_NAME)
+    nameb: $(SERVICES_PRE_SHARED_CERT)
+
 spec:
   selector:
     matchLabels:
