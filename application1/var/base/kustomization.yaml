@@ -1,0 +1,24 @@
+# file: base/kustomization.yaml
+bases:
+- ingress.yaml
+
+configMapGenerator:
+- name: ops-ingress-properties
+  envs: [environment.properties]
+
+vars:
+- name: SERVICES_GLOBAL_STATIC_IP_NAME
+  objref: { kind: ConfigMap, name: ops-ingress-properties, apiVersion: v1 }
+  fieldref: { fieldpath: data.SERVICES_GLOBAL_STATIC_IP_NAME }
+- name: SERVICES_PRE_SHARED_CERT
+  objref: { kind: ConfigMap, name: ops-ingress-properties, apiVersion: v1 }
+  fieldref: { fieldpath: data.SERVICES_PRE_SHARED_CERT }
+- name: HOST_A
+  objref: { kind: ConfigMap, name: ops-ingress-properties, apiVersion: v1 }
+  fieldref: { fieldpath: data.HOST_A }
+- name: HOST_B
+  objref: { kind: ConfigMap, name: ops-ingress-properties, apiVersion: v1 }
+  fieldref: { fieldpath: data.HOST_B }
+- name: HOST_C
+  objref: { kind: ConfigMap, name: ops-ingress-properties, apiVersion: v1 }
+  fieldref: { fieldpath: data.HOST_C }
