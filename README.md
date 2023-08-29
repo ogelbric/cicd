@@ -50,7 +50,7 @@ nginx-54f4568dfc-lhfw4   1/1     Running   0          18m
 ```
 POD flow: weather -> sun -> rain -> yes
 ```
-# TMC integration
+# TMC / TSM integration
 
 ```
 On Cluster 1
