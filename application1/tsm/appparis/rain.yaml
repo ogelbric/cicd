@@ -12,7 +12,7 @@ spec:
     metadata:
       labels:
         app: rain
-        version: v1
+        version: v2
     spec:
       containers:
       - name: rain
