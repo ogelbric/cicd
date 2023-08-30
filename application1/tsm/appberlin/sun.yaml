@@ -12,7 +12,7 @@ spec:
     metadata:
       labels:
         app: sun
-        version: v1
+        version: v2
     spec:
       containers:
       - name: sun
